@@ -1,0 +1,1601 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Black Han Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/black-han-sans-v17-latin-regular.woff2') format('woff2');
+}
+
+/* bebas-neue-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/bebas-neue-v14-latin-regular.woff2') format('woff2');
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+}
+
+/* montserrat-800 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/montserrat-v26-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+h1 {
+  font-size: 30px;
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+}
+
+h4 {
+  color: #c9c9c9;
+  font-size: 37px;
+  font-family: 'Bebas Neue';
+	margin: 0;
+  margin-bottom: 10px;
+}
+
+p1 {
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+h5 {
+  color: white;
+  font-size: 55px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 0.5px;
+}
+
+/* Общие стили для HTML */
+html {
+  box-sizing: border-box; /* Задаем box-sizing для всех элементов в документе */
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+}
+#content{
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+} 
+
+/* Стили для всех элементов и их псевдоэлементов */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Наследуем box-sizing от родительского элемента */
+}
+
+/* Стили для тела документа */
+body {
+  font-family: 'Montserrat'; /* Задаем шрифт */
+  font-weight: 400; /* Задаем нормальное начертание шрифта */
+  font-size: 26px; /* Задаем размер шрифта */
+  text-align: center; /* Выравниваем текст по центру */
+  color: #fff; /* Задаем цвет текста */
+  background-color: rgba(0, 0, 0, 0); /* Задаем цвет фона с прозрачностью */
+  overflow: hidden; /* Запретить прокрутку страницы */
+}
+
+/* Обертка для контента */
+.wrapper {
+  max-width: 2000px; /* Задаем максимальную ширину обертки */
+  margin: 0 auto; /* Центрируем обертку по горизонтали */
+}
+
+/* Стили для верхнего блока (header) */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Обертка для элементов в верхнем блоке */
+.header_wrapper {
+  display: flex; /* Устанавливаем flex-контейнер */
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+  align-items: flex-end; /* Выравниваем элементы по нижнему краю */
+  justify-content: space-between; /* Распределяем элементы равномерно по горизонтали */
+  padding-top: 49px;
+}
+
+
+/* Стили для навигационного меню */
+.header_list {
+  display: flex; /* Устанавливаем flex-контейнер */
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+}
+
+/* Стили для элементов навигационного меню */
+.header_item {
+  margin-right: 71px; /* Задаем отступ между элементами */
+}
+
+/* Стили для последнего элемента навигационного меню */
+.header_item:last-child {
+  margin-right: 20px; /* правый отступ у последнего элемента */
+}
+
+.header_logo:last-child {
+  margin-left: 20px; /* левый отступ у  элемента */
+}
+
+/* Стили для ссылок в навигационном меню */
+.header_link, .header_logo {
+  font-family: 'Bebas Neue'; /* Задаем шрифт */
+  font-weight: 400; /* Задаем нормальное начертание шрифта */
+  font-size: 41px; /* Задаем размер шрифта */
+  line-height: 49px; /* Задаем высоту строки */
+  text-align: center; /* Выравниваем текст по центру */
+  color: #fff; /* Задаем цвет текста */
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+
+
+/* Стили для секции intro */
+.main-intro {
+  height: 100vh;
+  background: url(/img/backgrounds/main-bg.png) black no-repeat center/cover;;
+  background-size: cover;
+}
+
+/* Стили для изображения в секции intro */
+.main-image,
+.main-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-image {
+  top: 130px;
+}
+
+.main-name {
+  top: 285px;
+}
+
+.press-button {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+}
+
+/* Стили для контейнера глобуса */
+.globe-container {
+  position: absolute;
+  top: 1150px; /* Ваши указанные координаты */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Переносим элемент на 50% относительно его собственных размеров */
+}
+
+/* Стили для картинки космонавта */
+.cosmonaut1 {
+  position: absolute;
+  top: -60px; /* Расположение по вертикали на 50% */
+  left: 45%;
+  transform: translate(-50%, -50%); /* Переносим элемент на 50% относительно его собственных размеров */
+  transform: scale(2,2);
+}
+
+
+.cosmonaut2 {
+  position: absolute;
+  top: -120px; /* Расположение по вертикали на 50% */
+  left: 45%;
+  transform: translate(-50%, -50%); /* Переносим элемент на 50% относительно его собственных размеров */
+  transform: scale(2,2);
+}
+
+
+.cosmonaut3 {
+  position: absolute;
+  top: -130px; /* Расположение по вертикали на 50% */
+  left: 46%;
+  transform: translate(-50%, -50%); /* Переносим элемент на 50% относительно его собственных размеров */
+  transform: scale(2,2);
+}
+
+
+.cosmonaut4 {
+  position: absolute;
+  top: -130px; /* Расположение по вертикали на 50% */
+  left: 46%;
+  transform: translate(-50%, -50%); /* Переносим элемент на 50% относительно его собственных размеров */
+  transform: scale(2,2);
+}
+
+
+/* Стили для кнопки "Button" */
+.button {
+  position: absolute; /* Позиционирование абсолютное */
+  left: 50%; /* Расположение по горизонтали на 50% */
+  transform: translate(-50%, -50%); /* Сдвигаем элемент на 50% относительно его размеров */
+  cursor: pointer; /* Добавляем курсор указывающий, что элемент является ссылкой */
+  opacity: 0; /* Устанавливаем начальную непрозрачность */
+}
+
+/* Стили для кнопки "Click to Open" */
+.open-button {
+  top: 230px; /* Расположение по вертикали на 50% */
+}
+
+/* Стили для кнопки  */
+.skills-button {
+  top: 385px; /* Располагаем по вертикали */
+}
+
+.text-bar {
+  display: block; /* Убедитесь, что text-bar отображается как блочный элемент */
+  position: absolute; /* Позиционирование абсолютное, чтобы разместить его поверх других элементов */
+  top: 170px; /* Расположение по вертикали на 50% */
+  left: 50%; /* Расположение по горизонтали на 50% */
+  transform: translate(-50%, -50%); /* Центрирование текста внутри text-bar */
+  line-height: 1.3;
+  background-color:transparent; /* Добавьте непрозрачный фон для текста */
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 1s ease; /* Добавляем анимацию для плавного появления */
+}
+
+/* Стили для контейнера социальных иконок */
+.social-icons {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: filter 0.3s; /* Добавляем плавный переход для свойства фильтра */
+}
+/* Стили для социальной иконки */
+.social-icon {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  transition: transform 0.3s ease; /* Добавляем анимацию при наведении */
+}
+
+
+
+
+/* Начало стилей для contact me файла */
+
+
+
+
+
+/* Стили для секции intro */
+.contact-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/contact-bg.png) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для логотипа в секции contact-intro */
+.contact-logo {
+  position: absolute; /* Позиционируем абсолютно */
+  left: 50%; /* Размещаем по горизонтали в центре */
+  transform: translateX(-50%); /* Сдвигаем обратно на половину ширины элемента */
+  top: 60px; /* Отступ сверху */
+  filter: brightness(130%); /* Увеличиваем яркость на 50% */
+}
+
+.notification {
+  position: fixed; /* Устанавливаем фиксированное позиционирование */
+  bottom: 20px; /* Отступ от нижнего края экрана */
+  left: 100px; /* Отступ от левого края экрана */
+}
+
+#response-container {
+  font-family: 'Montserrat';
+  font-size: 27px;
+  width: 384px;
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(206, 183, 255, 1); 
+}
+/* Стили для placeholder */
+::placeholder {
+  color: #ffffff9a; /* Цвет placeholder */
+}
+
+.email::placeholder {
+  color: #ffffff9a; /* Цвет placeholder */
+}
+
+/* Стили для текстовых полей */
+.email,
+.subject,
+.content {
+  position: absolute; /* Позиционируем абсолютно */
+  font-family: 'Bebas Neue', sans-serif; /* Устанавливаем шрифт */
+  font-size: 25px; /* Устанавливаем размер шрифта */
+  color: #ffffff; /* Устанавливаем цвет текста */
+  background-color: rgba(241, 183, 255, 0.295); /* Устанавливаем фоновый цвет */
+  border: none; /* Убираем границу */
+  resize: none; /* Запрещаем изменение размера */
+  width: 676px; /* Устанавливаем ширину */
+  left: 50%; /* Позиционируем слева в центре */
+  transform: translateX(-50%); /* Сдвигаем обратно на половину ширины элемента */
+}
+
+/* Стили для поля ввода Email */
+.email {
+  top: 250px; /* Располагаем по вертикали */
+  height: 51px; /* Устанавливаем высоту блока */
+  padding-left: 10px;
+}
+
+/* Стили для поля ввода Subject */
+.subject {
+  top: 350px; /* Располагаем по вертикали */
+  height: 51px; /* Устанавливаем высоту блока */
+  padding-top: 9px;
+  padding-left: 10px;
+}
+
+/* Стили для поля ввода Content */
+.content {
+  top: 450px; /* Располагаем по вертикали */
+  height: 225px; /* Устанавливаем высоту блока */
+  padding-top: 9px;
+  padding-left: 10px;
+}
+
+/* Стилизация скроллбара для веб-кит браузеров */
+.content::-webkit-scrollbar {
+  width: 12px; /* Ширина скроллбара */
+}
+
+.content::-webkit-scrollbar-track {
+  background: rgba(206, 183, 255, 0.295); /* Цвет трека скроллбара */
+  border-radius: 10px; /* Радиус скругления трека */
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #9273ca; /* Цвет ползунка скроллбара */
+  border-radius: 10px; /* Радиус скругления ползунка */
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: #735b9e; /* Цвет ползунка скроллбара при наведении */
+}
+
+/* Стили для кнопки "submit request" */
+.submit-request-bar {
+  top: 800px; /* Располагаем по вертикали */
+}
+
+.delete-button {
+  top: 840px; 
+}
+
+/* Стили для контактов */
+.contact {
+  display: inline-block;
+  font-family: 'Bebas Neue'; /* Задаем шрифт */
+  font-size: 38px;
+  color: #fff; /* Задаем цвет текста */
+  margin-bottom: 60px; /* Добавляем отступ справа между блоками */
+  transform: translate(-50%, -50%); /* Выравниваем по центру */
+}
+
+/* Обертка для контактов */
+.contact-wrapper {
+  display: flex;
+  flex-direction: column; /* Отображаем элементы по вертикали */
+  position: absolute;
+  top: 280px; /* Размещаем сверху */
+  left: 50%; /* Размещаем по центру горизонтали */
+  transform: translateX(-370%); /* Сдвигаем влево */
+}
+
+
+
+
+/* Начало стилей для my skills файла */
+
+
+
+
+
+/* Стили для секции intro */
+.skills-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/skills-bg.png) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для логотипа в секции -intro */
+.skills-logo {
+  position: absolute; /* Позиционируем абсолютно */
+  left: 50%; /* Размещаем по горизонтали в центре */
+  transform: translateX(-50%); /* Сдвигаем обратно на половину ширины элемента */
+  top: 60px; /* Отступ сверху */
+  filter: brightness(130%); /* Увеличиваем яркость на 50% */
+}
+
+.skills-name{
+  position: absolute;
+  font-family: 'Bebas Neue'; /* Задаем шрифт */
+  font-size: 55px;
+  text-shadow: 0 0 4px rgb(178, 119, 255); /* Горизонтальное смещение, вертикальное смещение, размытие, цвет */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 230px;
+}
+
+.container {
+  display: inline-block;
+  line-height: 1.3;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  width: 250px;
+  height: 90px;
+  margin-right: 25px; /* Добавляем отступ справа между блоками */
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(206, 183, 255, 1); /* Добавляем границу к каждому блоку */
+  transform: translate(-50%, -50%);
+}
+
+.container-wrapper {
+  display: flex;
+  align-items: center; /* Выравниваем элементы по центру */
+  position: absolute;
+  top: 700px;
+  left: 50%;
+  transform: translateX(-38%);
+}
+
+
+
+
+/* Начало стилей для my Planet Navigator файла */
+
+
+
+
+/* Стили для секции intro */
+.planets-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/planets-bg.png) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для логотипа в секции contact-intro */
+.planets-logo {
+  position: absolute; /* Позиционируем абсолютно */
+  left: 50%; /* Размещаем по горизонтали в центре */
+  transform: translateX(-50%); /* Сдвигаем обратно на половину ширины элемента */
+  top: 60px; /* Отступ сверху */
+  filter: brightness(130%); /* Увеличиваем яркость на 50% */
+}
+
+/* Стили для изображения в секции intro */
+.planet-name,
+.planet-mass,
+.planet-area,
+.planet-speed,
+.planet-class,
+.planet-views {
+  font-family: 'Bebas Neue', sans-serif; /* Устанавливаем шрифт */
+  color: #ffffff; /* Устанавливаем цвет текста */
+  transform: translateX(-50%);
+  font-size: 41px; /* Устанавливаем размер шрифта */
+  position: absolute;
+  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+  text-align: left; /* Выравниваем текст по левой стороне */
+}
+.planet-name{
+  top: -280px;
+  font-size: 61px; /* Устанавливаем размер шрифта */
+  left: 50%;
+}
+.planet-mass {
+  top: -200px;
+  left: 75%;
+}
+.planet-area {
+  top: -135px;
+  left: 78%;
+}
+.planet-speed{
+  top: -135px;
+  left: 14%;
+}
+.planet-class{
+  top: -200px;
+  left: 17%;
+}
+
+.planet-views{
+  top: 350px;
+  left: 50%;
+}
+
+.navigation-buttons {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.navigation-buttons img {
+  margin: 0 20px; /* Добавляем отступы по бокам */
+  transform: translate(-50%, -50%);
+  
+}
+
+
+/* Навигационное меню */
+.side-nav {
+  z-index: 9;
+  background-color: rgba(0, 0, 0, .6); /* --nav-bg */
+  height: 635px;
+  position: fixed;
+  right: -300px; /* calc(var(--nav-width) * -1) */
+  top: 100px; /* Опускаем ниже на 50px */
+  transition: right 0.2s linear; /* var(--animation-time) */
+  width: 300px; /* var(--nav-width) */
+}
+
+.side-nav #menuToggle {
+  background: rgba(0, 0, 0, .6); /* --nav-bg */
+  display: block;
+  position: relative;
+  height: 45px; /* var(--nav-marker-height) */
+  left: -50px; /* calc(var(--nav-marker-width) * -1) */
+  top: 75px;
+  width: 50px; /* var(--nav-marker-width) */
+}
+
+.side-nav #menuToggle span {
+  background: rgb(255, 255, 255); /* --menu-text-color */
+  display: block;
+  height: 10%;
+  left: 10%;
+  position: absolute;
+  top: 45%;
+  width: 80%;
+}
+
+
+
+
+/* Начало стилей для my Stellar Directory файла */
+
+
+
+
+/* Стили для секции intro */
+.stellars-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/stellars-bg.png) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для логотипа в секции contact-intro */
+.stellars-logo {
+  position: absolute; /* Позиционируем абсолютно */
+  left: 50%; /* Размещаем по горизонтали в центре */
+  transform: translateX(-50%); /* Сдвигаем обратно на половину ширины элемента */
+  top: 60px; /* Отступ сверху */
+  filter: brightness(130%); /* Увеличиваем яркость на 50% */
+}
+
+/* Стили для изображения в секции intro */
+.stellar-name,
+.stellar-mass,
+.stellar-area,
+.stellar-speed,
+.stellar-class,
+.stellar-views {
+  font-family: 'Bebas Neue', sans-serif; /* Устанавливаем шрифт */
+  color: #ffffff; /* Устанавливаем цвет текста */
+  transform: translateX(-50%);
+  font-size: 41px; /* Устанавливаем размер шрифта */
+  position: absolute;
+  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+  text-align: left; /* Выравниваем текст по левой стороне */
+}
+.stellar-name{
+  top: -280px;
+  font-size: 61px; /* Устанавливаем размер шрифта */
+  left: 50%;
+}
+.stellar-mass {
+  top: -200px;
+  left: 75%;
+}
+.stellar-area {
+  top: -135px;
+  left: 78%;
+}
+.stellar-speed{
+  top: -135px;
+  left: 14%;
+}
+.stellar-class{
+  top: -200px;
+  left: 17%;
+}
+
+.stellar-views{
+  top: 350px;
+  left: 50%;
+}
+
+
+
+/* Начало стилей для my Cosmic Calendar файла */
+
+
+
+/* Стили для секции intro */
+.calendars-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar1-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars2-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar2-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars3-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar3-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars4-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar4-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars5-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar5-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars6-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar6-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars7-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar7-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars8-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar8-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars9-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar9-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars10-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar10-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars11-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar11-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars12-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar12-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для секции intro */
+.calendars13-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar13-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для логотипа в секции contact-intro */
+.calendars-logo {
+  position: absolute; /* Позиционируем абсолютно */
+  left: 50%; /* Размещаем по горизонтали в центре */
+  transform: translateX(-50%); /* Сдвигаем обратно на половину ширины элемента */
+  top: 60px; /* Отступ сверху */
+  filter: brightness(130%); /* Увеличиваем яркость на 50% */
+}
+
+/* Стили для изображения в секции intro */
+.calendar-date,
+.data-error{
+  font-family: 'Bebas Neue', sans-serif; /* Устанавливаем шрифт */
+  color: #ffffff; /* Устанавливаем цвет текста */
+  transform: translateX(-50%);
+  font-size: 61px; /* Устанавливаем размер шрифта */
+  position: absolute;
+  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+  text-align: left; /* Выравниваем текст по левой стороне */
+  top: -270px;
+  left: 50%;
+}
+
+
+
+
+/* Начало стилей для my Login файла */
+
+
+
+
+.login-body {
+  font-size: 16px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+  overflow: hidden; /* Запретить прокрутку страницы */
+}
+
+/* Стили для секции intro */
+.login-intro {
+  height: 100vh; /* Устанавливаем высоту секции на весь экран */
+  background: url(/img/backgrounds/calendar11-bg.jpg) black no-repeat center/cover;; /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+}
+
+/* Стили для логотипа в секции contact-intro */
+.login-logo {
+	position: absolute; /* Позиционируем абсолютно */
+	left: 50%; /* Размещаем по горизонтали в центре */
+	transform: translateX(-50%); /* Сдвигаем обратно на половину ширины элемента */
+	top: 60px; /* Отступ сверху */
+	filter: brightness(130%); /* Увеличиваем яркость на 50% */
+}
+
+.login-container button {
+	border-radius: 20px;
+    border: 2px solid;
+	background-color: #e14ca8;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.form-container form {
+	background-color: #97ddfb;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.login-container input {
+	background-color: #bde8f9;
+    border: 2px solid rgba(206, 183, 255, 1);
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+  border-radius: 10px;
+}
+
+.login-container {
+	top: 240px;
+    border: 3px solid rgba(206, 183, 255, 1);
+	background-color: #97ddfb;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+  color: black;
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.sign-up-container {
+  color: black;
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.overlay {
+	background: #b941ff;
+	background: -webkit-linear-gradient(to right, #e14ca8, #b33cde);
+	background: linear-gradient(to right, #e14ca8, #b33cde);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+input::placeholder {
+  color: rgba(32, 32, 32, 0.801);
+}
+
+/* Стили для кнопки "submit request" */
+.submit-comment {
+  top: 840px; /* Располагаем по вертикали */
+}
+
+
+/* Начало стилей для my My Profile файла */
+
+
+
+
+  /* Стили для секции intro */
+.profile-intro {
+  height: 100vh;
+  background: url(/img/backgrounds/calendar9-bg.jpg) black no-repeat center/cover;;
+  background-size: cover;
+}
+  
+.profile-logo {
+  position: absolute; /* Позиционируем абсолютно */
+  left: 50%; /* Размещаем по горизонтали в центре */
+  transform: translateX(-50%); /* Сдвигаем обратно на половину ширины элемента */
+  top: 60px; /* Отступ сверху */
+  filter: brightness(130%); /* Увеличиваем яркость на 50% */
+}
+  
+.wrapper-profile {
+  position: relative;
+  top: 220px;
+  border-radius: 10px;
+  background-color: rgba(211, 102, 221, 0.468);
+  width: 850px;
+  height: 600px;
+  box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+  margin: 0 auto;
+}
+  
+.left {
+  top: 220px;
+  height: 600px;
+  border-radius: 10px;
+  width: 260px;
+  background-color: #6b63ffd5;
+  align-items: center;
+  display: flex;
+}
+  
+.left li {
+  /* стили для элементов li только внутри .left */
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px; /* Выберите желаемый отступ между элементами */
+}
+  
+.icon {
+  padding-top: 6px;
+  cursor: pointer;
+}
+  
+.profile {
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 11px;
+  position: absolute;
+  cursor: pointer;
+    background-color:transparent;
+  border-color: transparent;
+}
+  
+.list_item {
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 11px;
+  position: absolute;
+  cursor: pointer;
+  background-color:transparent;
+  border-color: transparent;
+}
+
+.list_item:hover {
+  opacity: 0.6;
+}
+
+.right {
+  width: 1050px;
+}
+
+.avatar {
+  margin-left: -320px;
+  margin-top: -820px; /* Установим отступ сверху */
+  width: 170px;
+  height: auto;
+}
+
+.button_avatar {
+  position: absolute; /* Абсолютное позиционирование */
+  bottom: 250px; /* Отступ от нижнего края изображения */
+  left: 290px;
+  width: 150px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eaeaea;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+  color: #4e4f65;
+}
+
+.form {
+  margin-left: 470px;
+  margin-top: -600px;
+  margin-bottom: 20px;
+  width: 310px;
+  text-align: left; /* Выравнивание текста справа */
+}
+
+.form label {
+  letter-spacing: 0.75px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.field {
+  padding-bottom: 25px;
+}
+
+.field:last-child {
+  padding-bottom: 15px;
+}
+
+.field input {
+  padding-bottom: 5px;
+  padding-top: 16px;
+  margin-left: 0px;
+  width: 100%;
+  background-color: #ffffff00;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #eaeaea;
+  letter-spacing: 0.29px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bottom {
+  margin-left: 40px;
+}
+
+.bottom button {
+  width: 150px;
+  height: 45px;
+  bottom: 20px;
+  border: none;
+}
+
+.button_left {
+  border-radius: 10px;
+  margin-right: 5px;
+  background-color: #6c63ff;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+.button_right {
+  border-radius: 10px;
+  margin-left: 5px;
+  background-color: #eaeaea;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+  color: #4e4f65;
+}
+
+.button_middle {
+  border-radius: 10px;
+  margin-right: 5px;
+  background-color: #ac2323;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+  color: #e3e3e9;
+}
+
+.user_status {
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  position: absolute;
+  border-radius: 7px;
+  margin-right: 5px;
+  background-color: #138a40;
+  font-size: 25px;
+  font-weight: 300;
+  width: 80px;
+  height: 25px;
+  bottom: 20px;
+  border: none;
+}
+
+.user_status.profil {
+  top: 74px;
+  left: 325px;
+}
+
+
+
+
+/* Начало стилей для my Comments файла */
+
+
+
+
+.comments-intro {
+  height: 100vh;
+  background: url(/img/backgrounds/calendar5-bg.jpg) black no-repeat center/cover;
+  background-size: cover;
+}
+
+.comments-logo {
+  position: absolute;
+  left: 50%; /* Размещаем по горизонтали в центре */
+  transform: translateX(-50%); /* Сдвигаем обратно на половину ширины элемента */
+  top: 60px; /* Отступ сверху */
+  filter: brightness(120%); /* Увеличиваем яркость на 50% */
+}
+
+.comments-list .comment-name,
+.comments-list .comment-content,
+.comments-box .comment-head span {
+  font-size: 18px; /* Уменьшаем размер шрифта для имени, содержимого комментария и времени */
+}
+
+.comments-container {
+  margin: 0 auto 15px;
+  width: 768px;
+  display: flex;
+  height: 550px;
+  flex-direction: column; /* Нормальное направление колонок */
+  justify-content: flex-end; /* Форму комментария закрепляем внизу */
+  overflow: hidden; /* Скрываем переполнение */
+}
+
+.comments-list {
+  position: relative;
+  overflow-y: auto; /* Добавляем вертикальную прокрутку */
+  display: flex;
+  flex-direction: column-reverse; /* Отображение комментариев снизу вверх */
+  max-height: calc(100vh - 300px); /* Устанавливаем максимальную высоту для контейнера комментариев */
+}
+
+/* Стилизация скроллбара для веб-кит браузеров */
+.comments-list::-webkit-scrollbar {
+  width: 12px; /* Ширина скроллбара */
+}
+
+.comments-list::-webkit-scrollbar-track {
+  background: #f1f1f1bb; /* Цвет трека скроллбара */
+  border-radius: 10px; /* Радиус скругления трека */
+}
+
+.comments-list::-webkit-scrollbar-thumb {
+  background: #9273ca; /* Цвет ползунка скроллбара */
+  border-radius: 10px; /* Радиус скругления ползунка */
+}
+
+.comments-list::-webkit-scrollbar-thumb:hover {
+  background: #735b9e; /* Цвет ползунка скроллбара при наведении */
+}
+
+.comment-list li {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.comment-name {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff; /* Устанавливаем цвет текста */
+  font-size: 41px; /* Устанавливаем размер шрифта */
+  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+  text-align: left; /* Выравниваем текст по левой стороне */
+}
+
+.comment-name {
+  font-size: 61px; /* Устанавливаем размер шрифта */
+  left: 50%;
+}
+
+.comments-list .comment-avatar {
+  width: 65px;
+  height: 65px;
+  position: relative;
+  z-index: 99;
+  float: left;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.comments-list .comment-avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.comment-main-level {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.comment-box {
+  width: 680px;
+  float: right;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.comment-box .comment-head {
+  justify-content: space-between;
+  display: flex;
+  align-items: center; /* Выравниваем элементы внутри по вертикали */
+  background-color: rgba(206, 183, 255, 0.527);
+  padding: 15px 15px;
+  border: 2px solid rgba(206, 183, 255, 1);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.comment-box .comment-head i {
+  float: right;
+  margin-left: 14px;
+}
+
+.comment-head span {
+  font-size: 18px; /* Установите нужный вам размер шрифта */
+  margin-left: 10px; /* Установите отступ слева для размещения текста */
+  float: right; /* Перемещаем текст вправо от ника */
+}
+
+.comment-box .comment-name {
+  font-weight: 700;
+  float: left;
+  align-items: center;
+}
+
+.comment-head {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.comment-box .comment-content {
+  text-align: left;
+  border: 2px solid rgba(206, 183, 255, 1);
+  background-color: rgba(206, 183, 255, 0.527);
+  padding: 12px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+@media only screen and (max-width: 766px) {
+  .comments-container {
+    width: 480px;
+  }
+  
+  .comments-list .comment-box {
+    width: 390px;
+  }
+  
+  .reply-list .comment-box {
+    width: 320px;
+  }
+}
+
+.comment-form {
+  margin-top: 20px; /* Добавляем отступ сверху */
+  padding: 10px;
+  border-radius: 4px; /* Радиус границ */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Тень */
+  z-index: 99;
+  width: 100%; /* Текстовое поле занимает всю ширину формы */
+}
+
+.comment-form textarea {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  background-color: rgba(206, 183, 255, 0.527);
+  width: 100%; /* Текстовое поле занимает всю ширину формы */
+  height: 100px; /* Высота текстового поля */
+  padding: 10px;
+  border: 2px solid rgba(206, 183, 255, 1);
+  border-radius: 4px; /* Радиус границ */
+  resize: none; /* Отключаем возможность изменения размера текстового поля */
+  margin-bottom: 30px; /* Отступ снизу для кнопки отправки */
+}
+
+::placeholder {
+  color: #ffffff9a; /* Цвет placeholder */
+}
+
+.object-info {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 61px; /* Устанавливаем размер шрифта */
+  margin-top: 90px; /* Отступ сверху */
+  text-align: center; /* Выравнивание текста по центру */
+  margin-right: 45px;
+}
+
+.user_status.comments {
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+  top: 1px; /* Смещение вниз */
+}
+
+
+.delete-comment {
+  border-radius: 10px;
+  margin-right: 5px;
+  background-color: #961e1e;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+  color: #e3e3e9;
+}
+
+.comment-name-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.like-container {
+  display: flex;
+  align-items: center;
+}
+
+.like-count {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+
+
+
+/* Начало стилей для my Admin-menu файла */
+
+
+
+
+
+
+.admin-intro {
+  height: 100vh;
+  background: url(/img/backgrounds/calendar1-bg.jpg) black no-repeat center/cover;
+  background-size: cover;
+}
+
+.admin-logo {
+  position: absolute;
+  left: 50%; /* Размещаем по горизонтали в центре */
+  transform: translateX(-50%); /* Сдвигаем обратно на половину ширины элемента */
+  top: 60px; /* Отступ сверху */
+  filter: brightness(120%); /* Увеличиваем яркость на 50% */
+}
+
+
+
+.password {
+  width: 100%;
+  position: relative;
+}
+
+.password-control {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('/img/svg/view.svg') 0 0 no-repeat;
+  cursor: pointer;
+}
+.password-control.view {
+  background: url('/img/svg/no-view.svg') 0 0 no-repeat;
+}
+
+
+
+/* Начало стилей для my Cosmic-objects файла */
+
+
+
+
+
+.manage-objects-logo {
+  position: absolute; /* Позиционируем абсолютно */
+  left: 50%; /* Размещаем по горизонтали в центре */
+  transform: translateX(-50%); /* Сдвигаем обратно на половину ширины элемента */
+  top: 60px; /* Отступ сверху */
+}
+
+
+
+.table-container {
+	position: absolute;
+  top: 534px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.table-wrapper {
+  overflow-y: auto; /* Vertical scrolling */
+  max-height: 650px; /* Adjust the maximum height as needed */
+  width: 900px; /* Match the table width */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилизация скроллбара для веб-кит браузеров */
+.table-wrapper::-webkit-scrollbar {
+  width: 12px; /* Ширина скроллбара */
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1c7; /* Цвет трека скроллбара */
+  border-radius: 10px; /* Радиус скругления трека */
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #9273ca; /* Цвет ползунка скроллбара */
+  border-radius: 10px; /* Радиус скругления ползунка */
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #735b9e; /* Цвет ползунка скроллбара при наведении */
+}
+
+table {
+  margin: 0 auto; /* Центрирование таблицы */
+  width: 100%; /* Use 100% to fit the table-wrapper */
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+th {
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+thead th {
+  background-color: #4e60ad;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+  position: relative;
+}
+
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+
+
+
+
+/* Начало стилей для my Analytics файла */
+
+
+
+
+
+.analytics-logo {
+  padding-top: 60px; /* Отступ сверху */
+  padding-bottom: 30px;
+  filter: brightness(120%); /* Увеличиваем яркость на 50% */
+}
+
+.analytics-container {
+  margin: 0 auto 15px;
+  width: 1080px;
+  display: flex;
+  height: 630px;
+  flex-direction: column; /* Нормальное направление колонок */
+  justify-content: flex-end; /* Форму комментария закрепляем внизу */
+  overflow: hidden; /* Скрываем переполнение */
+}
+
+.analytics-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction:column;
+}
+/* Стилизация скроллбара для веб-кит браузеров */
+.analytics-list::-webkit-scrollbar {
+  width: 12px; /* Ширина скроллбара */
+}
+
+.analytics-list::-webkit-scrollbar-track {
+  background: #f1f1f18e; /* Цвет трека скроллбара */
+  border-radius: 10px; /* Радиус скругления трека */
+}
+
+.analytics-list::-webkit-scrollbar-thumb {
+  background: #9273ca; /* Цвет ползунка скроллбара */
+  border-radius: 10px; /* Радиус скругления ползунка */
+}
+
+.analytics-list::-webkit-scrollbar-thumb:hover {
+  background: #735b9e; /* Цвет ползунка скроллбара при наведении */
+}
+
+.analytics-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(206, 183, 255, 0.4);;
+  border: 3px solid rgba(206, 183, 255, 1);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.chart-container {
+  width: 100%;
+}
+
+
+
+
+
+
+
+

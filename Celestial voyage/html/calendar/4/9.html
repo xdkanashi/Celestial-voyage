@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Calendar | Celestial Voyage</title>
+    <link rel="icon" href="/img/planet-32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/reset.css"> <!-- Подключаем таблицу стилей для сброса стандартных стилей браузера -->
+    <link rel="stylesheet" href="/css/style.css"> <!-- Подключаем таблицу стилей для оформления страницы -->
+    <link rel="stylesheet" href="/css/transitions.css">
+    <script src="/js/calendar_script.js" defer></script> <!-- Подключаем скрипт JavaScript -->
+</head>
+<body>
+    <header class="header"> <!-- Верхний блок страницы -->
+        <div class="wrapper"> <!-- Обертка для центрирования содержимого -->
+            <div class="header_wrapper"> <!-- Обертка для элементов верхнего блока -->
+                <div class="header_logo"> <!-- Логотип -->
+                    <a href="/html/main.html" class="header_logo">Celestial Voyage</span> <!-- Текстовый логотип -->    
+                </div>
+                <nav class="header_nav"> <!-- Навигационное меню -->
+                    <ul class="header_list"> <!-- Список ссылок -->
+                        <li class="header_item">
+                            <a href="/html/skills.html" class="header_link">Skills</span>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">My profile</a> <!-- Ссылка "Мой профиль" -->
+                        </li> 
+                        <li class="header_item">
+                            <a href="/html/contact-me.html" class="header_link">Contact me</a> <!-- Ссылка "Свяжитесь со мной" -->
+                        </li>              
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="calendar-intro">
+            <div class="calendars4-intro">
+                <!-- Начальное приветствие -->
+                <img src="/img/svg/cosmic-calendar.svg" alt="Cosmic calendar" class="calendars-logo">
+                <img src="/img/svg/press-scroll.svg" alt="press and scroll" class="press-button">
+                <!-- Контейнер для глобуса -->
+                <div class="globe-container">
+                    <img src="/img/svg/uranus.svg" alt="Globe" class="globe" onload="this.style.visibility='visible';">
+                    <img src="/img/svg/Cosmonaut_3.svg" alt="Cosmonaut" class="cosmonaut3">
+                    <div class="button open-button">
+                        <img src="/img/svg/click-to-open.svg" alt="Click to Open">
+                    </div>
+                
+                 <!-- Добавляем картинку text-bar -->
+                 <img src="/img/svg/text-bar.svg" alt="Text Bar" class="text-bar" style="display: none;">
+
+                 <div class="calendar-date calendar-april">
+                    <p><p>Date: 09.04.2024</p></p> 
+                </div>  
+   
+                <div class="text-bar calendar-text" style="display: none;">
+                    <p></p>
+                </div>
+                <div class="text-bar calendar2-text" style="display: none;">
+                    <p></p>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <a href="8.html">
+                    <img src="/img/svg/arrow-left.svg" alt="Previous" class="prev-button">
+                </a>
+                <a href="10.html">
+                    <img src="/img/svg/arrow-right.svg" alt="Next" class="next-button">
+                </a>
+            </div>   
+    </main>
+</body>
+</html>

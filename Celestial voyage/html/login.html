@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Celestial Voyage</title>
+    <!-- Иконка для вкладки браузера -->
+    <link rel="icon" href="../img/planet-32.ico" type="image/x-icon">
+    <!-- Подключение таблицы сброса стилей браузера -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- Пользовательские стили -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/transitions.css">
+    <!-- Подключение скрипта JavaScript с отложенной загрузкой -->
+    <script src="../js/login_script.js" defer></script>
+</head>
+<body>
+    <!-- Верхний блок страницы -->
+    <header class="header">
+        <!-- Обертка для центрирования содержимого -->
+        <div class="wrapper">
+            <!-- Обертка для элементов верхнего блока -->
+            <div class="header_wrapper">
+                <!-- Логотип -->
+                <div class="header_logo">
+                    <!-- Текстовый логотип -->
+                    <a href="main.html" class="header_logo">Celestial Voyage</a>
+                </div>
+                <!-- Навигационное меню -->
+                <nav class="header_nav">
+                    <!-- Список ссылок -->
+                    <ul class="header_list">
+                        <!-- Ссылка "Мой профиль" -->
+                        <li class="header_item">
+                            <a href="login.html" class="header_link">My profile</a>
+                        </li>
+                        <!-- Ссылка "Свяжитесь со мной" -->
+                        <li class="header_item">
+                            <a href="contact-me.html" class="header_link">Contact me</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Секция ввода логина -->
+    <section class="login-intro">
+        <!-- Секция тела ввода логина -->
+        <section class="login-body">
+            <!-- Логотип входа / регистрации -->
+            <img src="../img/svg/login-logo.svg" alt="Sign up / in" class="login-logo">
+            <!-- Изображение "нажмите и прокрутите" -->
+            <img src="../img/svg/press-scroll.svg" alt="press and scroll" class="press-button">
+            <!-- Контейнер входа / регистрации -->
+            <div class="login-container" id="login-container">
+                <!-- Форма регистрации -->
+                <div class="form-container sign-up-container">
+                    <form action="#">
+                        <h3>Create Account</h3>
+                        <input type="text" placeholder="Name" />
+                        <input type="text" placeholder="Surname" />
+                        <input type="email" placeholder="Email" />
+                        <input type="date" placeholder="Birth Date" />          
+                        <input type="password" placeholder="Password" />
+                        <label for="profile-picture">
+                            <h3>Choose profile picture:</h3>
+                        </label>
+                        <input type="file" accept="image/*" id="profile-picture"/>            
+                        <button>Sign Up</button>
+                    </form>
+                </div>
+                <!-- Форма входа -->
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <h1>Sign in</h1>
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <button>Sign In</button>
+                    </form>
+                </div>
+                <!-- Наложение контейнера -->
+                <div class="overlay-container">
+                    <!-- Наложение -->
+                    <div class="overlay">
+                        <!-- Наложение слева -->
+                        <div class="overlay-panel overlay-left">
+                            <h1>Welcome Back!</h1>
+                            <p1>To keep connected with us please login with your personal info</p1>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <!-- Наложение справа -->
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello, Friend!</h1>
+                            <p1>Enter your personal details and start journey with us</p1>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Социальные иконки -->
+    <section class="social-icons">
+        <a href="https://github.com" class="social-icon github">
+            <img src="../img/svg/github.svg" alt="GitHub">
+        </a>
+        <a href="https://instagram.com" class="social-icon instagram">
+            <img src="../img/svg/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://linkedin.com" class="social-icon linkedin">
+            <img src="../img/svg/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://behance.net" class="social-icon behance">
+            <img src="../img/svg/behance.svg" alt="Behance">
+        </a>
+    </section>
+</body>
+</html>
+
+
+

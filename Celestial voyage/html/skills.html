@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills | Celestial Voyage</title>
+    <link rel="icon" href="../img/planet-32.ico" type="image/x-icon">
+    <!-- Подключаем таблицу стилей для сброса стандартных стилей браузера -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- Подключаем таблицу стилей для оформления страницы -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Подключаем таблицу стилей для анимаций -->
+    <link rel="stylesheet" href="../css/transitions.css">
+    <!-- Подключаем скрипт JavaScript -->
+    <script src="../js/skills_script.js" defer></script>
+</head>
+<body>
+    <!-- Верхний блок страницы -->
+    <header class="header">
+        <!-- Обертка для центрирования содержимого -->
+        <div class="wrapper">
+            <!-- Обертка для элементов верхнего блока -->
+            <div class="header_wrapper">
+                <!-- Логотип -->
+                <div class="header_logo">
+                    <!-- Текстовый логотип -->
+                    <a href="main.html" class="header_logo">Celestial Voyage</a>
+                </div>
+                <!-- Навигационное меню -->
+                <nav class="header_nav">
+                    <!-- Список ссылок -->
+                    <ul class="header_list">
+                        <!-- Ссылка "Мой профиль" -->
+                        <li class="header_item">
+                            <a href="/php/my-profile/index.php" class="header_link">My profile</a>
+                        </li>
+                        <!-- Ссылка "Свяжитесь со мной" -->
+                        <li class="header_item">
+                            <a href="/php/contact-me/index.php" class="header_link">Contact me</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Основное содержимое страницы -->
+    <main>
+        <!-- Секция вступления -->
+        <section class="intro-skills">
+            <div class="skills-intro">
+                <!-- Начальное приветствие -->
+                <img src="/img/svg/skills.svg" alt="skills" class="skills-logo">
+                <div class="skills-name">Here is list of some of my skills</div>
+                <img src="/img/svg/press-scroll.svg" alt="press and scroll" class="press-button">
+                <!-- Контейнер для глобуса -->
+                <div class="globe-container">
+                    <img src="/img/svg/pluto.svg" alt="Globe" class="globe" onload="this.style.visibility='visible';">
+                    <img src="/img/svg/Cosmonaut_2.svg" alt="Cosmonaut" class="cosmonaut2">
+                </div>
+                <!-- Контейнеры с навыками -->
+                <div class="container-wrapper">
+                    <a href="/php/cosmic-objects/planets/index.php?class=1&filter=" class="container skills-container1">Planet Navigator</a>
+                    <a href="/php/cosmic-objects/stellars/index.php?class=2&filter=" class="container skills-container2">Stellar <br> Directory </a>
+                    <a href="/html/cosmic-classroom.html" class="container skills-container3">Cosmic Classroom</a>
+                    <a href="/php/calendar/index.php" class="container skills-container4">Cosmic Calendar</a>
+                </div>
+                <!-- Социальные иконки -->
+                <section class="social-icons">
+                    <a href="https://github.com" class="social-icon github">
+                        <img src="/img/svg/github.svg" alt="GitHub">
+                    </a>
+                    <a href="https://instagram.com" class="social-icon instagram">
+                        <img src="/img/svg/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://linkedin.com" class="social-icon linkedin">
+                        <img src="/img/svg/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://behance.net" class="social-icon behance">
+                        <img src="/img/svg/behance.svg" alt="Behance">
+                    </a>
+                </section>
+            </div>   
+        </section>
+    </main>
+</body>
+</html>
+
+

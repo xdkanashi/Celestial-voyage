@@ -1,0 +1,383 @@
+/* Добавляем стили для элементов навигационного меню и логотипа при наведении */
+.header_item,
+.header_logo {
+  transition: transform 0.3s ease; /* Добавляем анимацию при наведении */
+}
+
+/* Стили для элементов навигационного меню и логотипа при наведении */
+.header_item:hover,
+.header_logo:hover {
+  transform: scale(1.1); /* Увеличиваем размер элементов при наведении */
+  filter: brightness(0.8); /* Уменьшаем яркость изображения */
+}
+
+/* Стили для социальной иконки при наведении */
+.social-icon:hover {
+  filter: brightness(0.7); /* Уменьшаем яркость изображения */
+  transform: scale(1.2); /* Увеличиваем размер иконки при наведении */
+}
+
+/* Стили для глобуса */
+.globe {
+    text-align: center;
+    height: auto;
+    animation: spin 30s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/* Стили для кнопки "Click to Open" при наведении */
+.open-button:hover,
+.submit-request-bar:hover,
+.skills-button:hover,
+.container:hover,
+.prev-button:hover,
+.next-button:hover,
+.submit-comment:hover,
+.delete-button:hover {
+    transform: translate(-50%, -50%) scale(1.2); /* При наведении увеличиваем размер кнопки на 20% */
+    transition: transform 0.3s ease; /* Добавляем анимацию увеличения с плавным эффектом */
+  }
+  
+  /* Ключевые кадры для анимации появления */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Начальная непрозрачность - нулевая */
+    }
+    to {
+      opacity: 1; /* Конечная непрозрачность - полная */
+    }
+  }
+  
+  /* Применяем анимацию появления к кнопке при загрузке страницы */
+.open-button,
+.submit-request-bar,
+.skills-button,
+.container,
+.prev-button,
+.next-button,
+.submit-comment,
+.delete-button,
+.analytics-logo {
+    animation: fadeIn 3s forwards; /* Анимация появления с продолжительностью 3 секунды */
+  }
+
+  /* Стили для изображений в секции intro */
+.main-image,
+.press-button,
+.contact-logo,
+.skills-logo,
+.skills-name,
+.login-logo,
+.profile-logo,
+.cosmic-clasroom-logo,
+.planets-logo,
+.stellars-logo,
+.calendars-logo,
+.comments-logo,
+.admin-logo,
+.manage-objects-logo {
+  opacity: 0; /* Устанавливаем начальную непрозрачность */
+  transform: translateY(10px) translateX(-50%); /* Сдвигаем элементы вниз и по центру */
+  animation: fadeInUp 1s forwards ease, slideInCenter 1s forwards ease; /* Применяем две анимации: появление сверху вниз и смещение в центр */
+  left: 50%; /* Размещаем элементы по горизонтали в центре */
+}
+
+/* Добавляем задержку анимации для изображения intro-image */
+.main-image {
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+/* Добавляем задержку анимации для изображения press-button */
+.press-button {
+  animation-delay: 0.6s; /* Задержка в 0.6 секунды для появления */
+}
+
+/* Добавляем задержку анимации для изображения intro-image */
+.contact-logo {
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+  /* Добавляем задержку анимации для изображения intro-image */
+.skills-logo {
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+.skills-name{
+  animation-delay: 0.5s; /* Задержка в 0.2 секунды для появления */
+}
+
+.login-logo{
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+.profile-logo{
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+.cosmic-clasroom-logo{
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+.planets-logo{
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+.stellars-logo{
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+.calendars-logo{
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+.comments-logo{
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+.admin-logo{
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+.manage-objects-logo{
+  animation-delay: 0.2s; /* Задержка в 0.2 секунды для появления */
+}
+
+/* Ключевые кадры для анимации появления снизу вверх */
+@keyframes fadeInUp {
+  from {
+    opacity: 0; /* Начальная непрозрачность */
+    transform: translateY(10px) translateX(-50%); /* Начальное смещение вниз и по центру */
+  }
+  to {
+    opacity: 1; /* Конечная непрозрачность */
+    transform: translateY(0) translateX(-50%); /* Конечное смещение вниз и по центру */
+  }
+}
+
+/* Ключевые кадры для анимации смещения в центр */
+@keyframes slideInCenter {
+  from {
+    opacity: 0; /* Начальная непрозрачность */
+    transform: translateY(10px) translateX(-50%); /* Начальное смещение вниз и по центру */
+  }
+  to {
+    opacity: 1; /* Конечная непрозрачность */
+    transform: translateY(0) translateX(-50%); /* Конечное смещение вниз и по центру */
+  }
+}
+
+/* Стили для анимации появления ссылок и названия вступления */
+.header_link,
+.main-name,
+.planet-stat,
+.stellar-stat {
+  transition: opacity 0.4s ease; /* Плавное изменение прозрачности */
+}
+
+/* Начало стилей для my Login файла */
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #97ddfb;
+}
+
+.login-container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.login-container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+    font-size: 25px;
+}
+
+.login-container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+    font-size: 25px;
+}
+
+.login-container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+.login-container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.login-container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+
+  /* Класс для анимации всплытия */
+.pop-up {
+  animation: popUp 0.5s ease-out forwards;
+}
+
+/* Определение ключевых кадров для анимации */
+@keyframes popUp {
+  from {
+      transform: translateY(100%); /* Начинаем с позиции ниже */
+      opacity: 0; /* Начинаем с прозрачности */
+  }
+  to {
+      transform: translateY(0); /* Конечная позиция */
+      opacity: 1; /* Конечная непрозрачность */
+  }
+}
+
+/* Класс для анимации плавного исчезновения */
+.fade-out {
+  animation: fadeOut 1s ease-out forwards; /* Анимация длится 1 секунду */
+}
+
+/* Анимация плавного исчезновения */
+@keyframes fadeOut {
+  from {
+      opacity: 1; /* Начальная непрозрачность */
+  }
+  to {
+      opacity: 0; /* Конечная прозрачность */
+  }
+}
+
+.side-nav #menuToggle span:before,
+.side-nav #menuToggle span:after {
+  background: rgb(255, 255, 255); /* --menu-text-color */
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: -250%;
+  transform: rotate(0deg);
+  width: 100%;
+}
+
+.side-nav #menuToggle span:after {
+  top: 250%;
+}
+
+.side-nav form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0 0 10px;
+}
+
+.side-nav form button {
+  font-family: 'Bebas Neue', sans-serif;
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255); /* --menu-text-color */
+  font-size: 35px; /* Adjusted font size */
+  margin: 0 0 20px 5px;
+  text-align: center;
+  text-decoration: none; /* Убираем подчеркивание у текста */
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  width: calc(100% - 25px); /* Ensure the button takes full width minus left margin */
+}
+
+.side-nav form button:after {
+  background: rgb(146, 62, 255); /* --menu-item */
+  content: '';
+  display: block;
+  height: 2px;
+  transition: width 0.2s; /* var(--animation-time) */
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.side-nav form button:hover:after,
+.side-nav form button.active:after {
+  width: 100%;
+}
+
+.side-nav.open {
+  right: 0;
+}
+
+.side-nav.open #menuToggle span {
+  background: transparent;
+  left: 10%;
+  top: 45%;
+}
+
+.side-nav.open #menuToggle span:before,
+.side-nav.open #menuToggle span:after {
+  background: rgb(255, 255, 255); /* --menu-text-color */
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.side-nav.open #menuToggle span:after {
+  transform: rotate(-45deg);
+}
+
+.side-nav #menuToggle .navClosed {
+  transition: background 0.1s linear; /* calc(var(--animation-time) / 2) */
+}
+
+.side-nav #menuToggle .navClosed:before,
+.side-nav #menuToggle .navClosed:after {
+  transition: top 0.2s linear 0.1s, transform 0.2s linear 0.1s; /* var(--animation-time) */
+}
+
+.side-nav #menuToggle .navOpen {
+  transition: background 0.1s linear 0.2s; /* calc(var(--animation-time) / 2) */
+}
+
+.side-nav #menuToggle .navOpen:before,
+.side-nav #menuToggle .navOpen:after {
+  transition: top 0.2s linear, transform 0.2s linear; /* var(--animation-time) */
+}
+
+.active-filter {
+  opacity: 0.4;
+}

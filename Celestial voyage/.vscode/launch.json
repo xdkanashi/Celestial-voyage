@@ -8,7 +8,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open main.html",
-            "file": "file:///D:/Celestial voyage/Celestial voyage/html/main.html"
+            "file": "/Celestial voyage/html/main.html"
         }
     ]
 }

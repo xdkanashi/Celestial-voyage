@@ -1,6 +1,6 @@
 # Celestial Voyage
 
-![Space]([https://example.com/space_image.jpg](https://pngfre.com/wp-content/uploads/Astronaut-12.png))
+![Space](https://pngfre.com/wp-content/uploads/Astronaut-12.png)
 
 Welcome to Celestial Voyage, an exhilarating journey through the cosmos right from your browser! 🚀✨
 

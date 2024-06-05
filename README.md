@@ -33,7 +33,7 @@
    - Replace `<path_to_php.exe>` with the path to your php.exe file.
 
 6. **Download Files from GitHub Repository**
-   - Clone or download the files from your GitHub repository.
+   - Clone or download the files from GitHub repository.
 
 7. **Set Up Laragon**
    - Open the SQL file in Laragon.
@@ -43,7 +43,7 @@
    - Open the project folder in Visual Studio Code (File -> Open Folder -> celestial voyage).
    - Navigate to `/html/main.html` file and run it.
    
-9. **Enjoy Your Site**
-   - Your Celestial Voyage project should now be up and running! Enjoy exploring your site.
+9. **Enjoy Site**
+   - Celestial Voyage project should now be up and running! Enjoy exploring site.
 
 

@@ -3,6 +3,7 @@
 ## Prerequisites
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Laragon](https://laragon.org/)
+- [PHP](https://windows.php.net/)
 
 ## Steps
 

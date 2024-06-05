@@ -1,4 +1,4 @@
-# Celestial Voyage
+# ✨ Celestial Voyage ✨
 
 ![Space](https://pngfre.com/wp-content/uploads/Astronaut-4.png)
 

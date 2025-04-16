@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments | Celestial Voyage</title>
+    <link rel="icon" href="/img/planet-32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/transitions.css">
+    <script src="js/comments_script.js" defer></script>
+</head>
+<body>
+    <!-- Верхний блок страницы -->
+    <header class="header">
+        <!-- Обертка для центрирования содержимого -->
+        <div class="wrapper">
+            <!-- Обертка для элементов верхнего блока -->
+            <div class="header_wrapper">
+                <!-- Логотип и кнопка "Go back" -->
+                <div class="header_logo">
+                    <!-- Навигационное меню -->
+                    <nav class="header-nav">
+                        <!-- Список элементов навигации -->
+                        <ul class="nav-list">
+                            <!-- Элемент навигации "Go back" -->
+                            <li class="nav-item"><a href="javascript:history.back()" class="header_logo"> &lt; Go back</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="comments-intro">
+        <img src="/img/svg/press-scroll.svg" alt="press and scroll" class="press-button">
+        <img src="/img/svg/comments-logo.svg" alt="skills" class="comments-logo">
+        <div class="navigation-buttons">
+            <a href="#!">
+                <img src="/img/svg/arrow-left.svg" alt="Previous" class="prev-button">
+            </a>
+            <a href="#!">
+                <img src="/img/svg/arrow-right.svg" alt="Next" class="next-button">
+            </a>
+        </div>
+        <div class="comments-container">
+            <ul id="comments-list" class="comments-list">
+                <li>
+                    <div class="comment-main-level">
+                        <div class="comment-avatar"><img src="/img/profile/my ava.jpg" alt=""></div>
+                        <div class="comment-box">
+                            <div class="comment-head">
+                                <h6 class="comment-name">Stefani Germanotta</a></h6>
+                                <span>10 minutes ago</span>
+                            </div>
+                            <div class="comment-content">
+                                Let's have some fun, this beat is sick I wanna take a ride on your disco stick 
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="comment-main-level">
+                        <div class="comment-avatar"><img src="/img/profile/my ava3.jpg" alt=""></div>
+                        <div class="comment-box">
+                            <div class="comment-head">
+                                <h6 class="comment-name">Mother Monster</a></h6>
+                                <span>10 minutes ago</span>
+                            </div>
+                            <div class="comment-content">
+                                I wanna kiss you (Huh!)
+                                But if I do, then I might miss you, babe (Huh!)
+                                It's complicated and stupid (Huh!)
+                                Got my ass squeezed by sexy Cupid
+                                Guess he wants to play, wants to play (Huh!)
+                                A love game, a love game (Huh!)
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="comment-form">
+                <form action="comments.php" method="POST">
+                    <textarea name="comment" placeholder="Enter your comment..." rows="4" cols="50"></textarea><br>
+                    <div class="button submit-request-bar">
+                        <button type="submit" style="background-color: transparent; border: none;">
+                        <img src="/img/svg/comments-button.svg" alt="send comment">
+                        </button>
+                    </div>
+                </form>
+            </div>
+                        
+        </div>
+    </div>
+</body>
+</html>
+

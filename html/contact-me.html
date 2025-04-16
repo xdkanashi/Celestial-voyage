@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Устанавливаем кодировку документа -->
+    <meta charset="UTF-8">
+    <!-- Определяем масштаб и размер экрана для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Устанавливаем заголовок страницы -->
+    <title>Contact Me | Celestial Voyage</title>
+    <link rel="icon" href="../img/planet-32.ico" type="image/x-icon">
+    <!-- Подключаем таблицы стилей -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/transitions.css">
+    <!-- Подключаем скрипт JavaScript -->
+    <script src="../js/contact-me_script.js" defer></script>
+</head>
+
+<body>
+    <!-- Верхний блок страницы -->
+    <header class="header">
+        <!-- Обертка для центрирования содержимого -->
+        <div class="wrapper">
+            <!-- Обертка для элементов верхнего блока -->
+            <div class="header_wrapper">
+                <!-- Логотип и кнопка "Go back" -->
+                <div class="header_logo">
+                    <!-- Навигационное меню -->
+                    <nav class="header-nav">
+                        <!-- Список элементов навигации -->
+                        <ul class="nav-list">
+                            <!-- Элемент навигации "Go back" -->
+                            <li class="nav-item"><a href="javascript:history.back()" class="header_logo"> &lt; Go back</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое страницы -->
+    <main>
+        <!-- Секция Контактов -->
+        <section class="contact-intro">
+            <!-- Обертка для контента секции -->
+            <div class="intro-content">
+                <!-- Изображение "Contact me" -->
+                <img src="../img/svg/contact-me.svg" alt="Contact me" class="contact-logo">
+                <!-- Контейнер для элементов контактной формы -->
+                <div class="contact-container">
+                    <!-- Поле для ввода Email -->
+                    <textarea class="email" placeholder="Enter email..." maxlength="50"></textarea>
+                    <!-- Поле для ввода Subject -->
+                    <textarea class="subject" placeholder="Enter subject..." maxlength="50"></textarea>
+                    <!-- Поле для ввода Content -->
+                    <textarea class="content" placeholder="Enter content..." maxlength="600"></textarea>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact text-email">Email: </div>
+                    <div class="contact text-subject">Subject: </div>
+                    <div class="contact text-content">Content: </div>
+                </div>
+                <!-- Кнопка "submit request" -->
+                <div class="button submit-request-bar">
+                    <img src="../img/svg/contact-submit-request.svg" alt="submit request">
+                </div>
+                <!-- уведомление о успешной отправке заполненной формы" -->
+                <div class="notification notification-true">
+                    <img src="/img/svg/notification-true.svg" alt="You successfully submitted request!" style="display: none;">
+                </div>
+                <!-- уведомление о не успешной отправке заполненной формы" -->
+                <div class="notification notification-false">
+                    <img src="/img/svg/notification-false.svg" alt="Oops! Looks like there is a problem!"style="display: none;">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Социальные иконки -->
+    <section class="social-icons">
+        <!-- Ссылка на GitHub -->
+        <a href="https://github.com" class="social-icon">
+            <img src="../img/svg/github.svg" alt="GitHub">
+        </a>
+        <!-- Ссылка на Instagram -->
+        <a href="https://instagram.com" class="social-icon">
+            <img src="../img/svg/instagram.svg" alt="Instagram">
+        </a>
+        <!-- Ссылка на LinkedIn -->
+        <a href="https://linkedin.com" class="social-icon">
+            <img src="../img/svg/linkedin.svg" alt="LinkedIn">
+        </a>
+        <!-- Ссылка на Behance -->
+        <a href="https://behance.net" class="social-icon">
+            <img src="../img/svg/behance.svg" alt="Behance">
+        </a>
+    </section>
+</body>
+
+</html>
+
+
+

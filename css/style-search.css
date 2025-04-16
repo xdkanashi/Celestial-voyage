@@ -1,0 +1,65 @@
+/*styles for search  */
+#wrap {
+    margin: 50px 100px;
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    padding: 0;
+  }
+  
+  input[type="text"] {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 38px; /* Задаем размер шрифта */
+    line-height: 49px; /* Задаем высоту строки */
+    color: #fff;
+    height: 67px;
+    width: 63px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 3px;
+    padding-left: 65px;
+    padding-top: 25px; 
+    width: 0px;
+    position: absolute;
+    top: 29px;
+    left: 260px;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+  }
+  
+  input[type="text"]:focus:hover {
+    border-bottom: 1px solid #BBB;
+  }
+  
+  input[type="text"]:focus {
+    width: 320px;
+    z-index: 1;
+    border-bottom: 1px solid #BBB;
+    cursor: text;
+  }
+  input[type="submit"] {
+    height: 55px;
+    width: 60px;
+    display: inline-block;
+    background: url(/img/profile/icons-profile/search.png) center center no-repeat;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 40px;
+    left: 260px;
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity .4s ease;
+  }
+  
+  input[type="submit"]:hover {
+    transform: scale(1.1); /* Увеличиваем размер элементов при наведении */
+    filter: brightness(0.8); /* Уменьшаем яркость изображения */
+  }
+  
+  input[type="text"]::placeholder {
+    color: #a3a2a2c9; /* Установите цвет плейсхолдера */
+  }
